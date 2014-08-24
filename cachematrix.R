@@ -9,6 +9,11 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+  data <- x$get()
+  m <- mean(solve(data, ...))
+  x$setmean(m)
+  m
+  
 }
 
 
